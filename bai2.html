@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+<body>
+
+</body>
+
+
+<script>
+
+
+    //        Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn. Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
+    //
+    //    Có thể xem hướng dẫn tại:
+    //
+    //        https://www.w3resource.com/javascript-exercises/javascript-array-exercise-6.php
+    //
+    //            Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa. Ví dụ: nếu bạn nhập vào chuỗi 'The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX'.
+    //
+    //        Có thể xem hướng dẫn tại:
+    //
+    //        https://www.w3resource.com/javascript-exercises/javascript-array-exercise-9.php
+    //
+
+    "use strict";
+    const num = prompt("Nhap so can insert dashes (-)");
+    const str = num.toString();
+    const result = [str[0]]; // ko khai bao cai nay neu phan tu dau la 0 se bi mat!!!
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] % 2 === 0 && str[i - 1] % 2 === 0) {
+            result.push('-', str[i]);
+        } else {
+            result.push(str[i]);
+        }
+    }
+    let b = result.join("");
+
+    console.log(b);
+
+
+    // let soChan = 0;
+    // let a;
+    // for (let i = 2; i <= 55; i = i + 2) {
+    //     a = i.toString();
+    //     console.log(a);
+    //     soChan += "-" + a;
+    // }
+    // console.log(soChan);
+
+
+</script>
+
+
+</html>

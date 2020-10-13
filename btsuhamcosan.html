@@ -32,17 +32,25 @@
     //        https://www.w3resource.com/javascript-exercises/javascript-array-exercise-9.php
     //
 
+    "use strict";
     let myColor = ["Red", "Green", "White", "Black"];
-    document.write("Noi chuoi thanh: ");
-    for (let i = 0; i < myColor.length; i++) {
-        document.write(myColor[i] + ", ");
-    }
+    let joinColor = myColor.join(", ");
+    let joinColor2 = myColor.join(" ");
+    let joinColor3 = myColor.join("+");
 
+    document.write(joinColor + "<br>");
+    document.write(joinColor2 + "<br>");
+    document.write(joinColor3 + "<br>");
 
+    // let myColor = ["Red", "Green", "White", "Black"];
+    // document.write("Noi chuoi thanh: ");
+    // for (let i = 0; i < myColor.length; i++) {
+    //     document.write(myColor[i] + ", ");
+    // }
 
-    
 
 </script>
 
 
 </html>
+
